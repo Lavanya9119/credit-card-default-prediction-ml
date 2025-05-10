@@ -11,8 +11,6 @@ from sklearn.metrics import confusion_matrix, classification_report, accuracy_sc
 import seaborn as sns 
 import matplotlib.pyplot as plt 
  
-7 
- 
  
 # Load the dataset 
 file_path = 'default of credit card clients.xls'  # Update with your file path 
@@ -64,8 +62,6 @@ models = {
 # Train and evaluate models 
 results = [] 
 plt.figure(figsize=(15, 5))  # For confusion matrix heatmaps 
- 
-8 
  
 for i, (name, model) in enumerate(models.items()): 
     model.fit(X_train_scaled, y_train) 
